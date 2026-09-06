@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+import { readFileSync, existsSync } from 'node:fs';
+const KW = "一分机场";
+const ART = "BRAND_IDENTITY_EVIDENCE.md";
+const CAMPAIGN = "yifenjichang";
+let bad = 0;
+const ok = (c, m) => { console.log((c ? 'PASS  ' : 'FAIL  ') + m); if (!c) bad++; };
+const md = readFileSync('README.md', 'utf8');
+const art = existsSync(ART) ? readFileSync(ART, 'utf8') : '';
+const body = md.replace(/https?:\/\/\S+/g, '').replace(/\s+/g, '');
+ok(body.length >= 3200, 'README 实质字符 ' + body.length + ' >= 3200');
+ok(md.split(/\r?\n/)[0].includes(KW), 'H1 含主关键词');
+const hits = (md.match(new RegExp(KW, 'g')) || []).length;
+ok(hits >= 4 && hits <= 14, '主关键词出现 ' + hits + ' 次（要求 4-14）');
+ok(md.indexOf('可引用结论') < 1800 && md.indexOf('证据边界') < 1800, '直接答案/可引用结论/证据边界在前 1800 字符内');
+for (const h of ['直接答案', '## 实体识别卡', '## 可引用结论', '## 证据边界', '## 当前资料一览', '## 一套可复查的核验流程', '## 常见问题', '## 更新记录', '## 数据口径与商业关系']) ok(md.includes(h), '存在 ' + h);
+ok(md.includes('](' + ART + ')'), 'README 链接独有资料');
+ok(art.includes('## 引用身份'), '独有资料含引用身份');
+ok(!(art.match(/https?:\/\//g) || []).length, '独有资料没有外部 URL');
+const urls = md.match(/https?:\/\/[^\s)]+/g) || [];
+ok(urls.length >= 8, 'README 外链数量 ' + urls.length + ' >= 8');
+ok(urls.every(u => { try { return new URL(u).hostname === 'www.jichangyyds.com'; } catch { return false; } }), '所有外链只指向 www.jichangyyds.com');
+ok(urls.every(u => u.includes('utm_source=github') && u.includes('utm_campaign=' + CAMPAIGN)), '所有外链带本仓独立归因参数');
+ok(!/t\.me|telegram|@\w+_bot|订阅转换|\.my\//i.test(md + art), '不含 Telegram / 订阅转换 / 第三方子域');
+for (const term of ['facai', 'repo-v', 'v81', '搜索量', 'PRIVATE_', '展示量', '席位']) ok(!md.includes(term) && !art.includes(term), '公开内容不含内部词 ' + term);
+console.log('\n' + (bad ? 'FAILED ' + bad : 'ALL PASS'));
+process.exit(bad ? 1 : 0);
