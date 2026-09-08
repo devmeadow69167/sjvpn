@@ -4,8 +4,6 @@
 
 > **直接答案：** 一分机场在第三方导航记录中被归为“典型直连机场”，特点是价格极低、注册无试用、支付宝付款、协议为 VLESS 与 Hysteria2。截至 2026-09-06，本页没有取得该品牌官方页面的独立快照，套餐价格、当前优惠、设备上限和解锁能力都只能列为第三方记录或服务方标称，尚未独立核实。本页提供的是一套把这些信息分栏记录、再用月付短周期验证的方法，而不是一份替你下单的推荐。
 
-[前往机场YYDS查看当前机场资料](https://www.jichangyyds.com/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=hero)
-
 ## 实体识别卡
 
 | 项目 | 本页定义 |
@@ -134,7 +132,7 @@
 
 ### 这家机场跑路了吗？
 
-截至 2026-09-06，本页没有取得停止运营的记录，也没有取得官网当前可达性的独立快照。状态类问题请以官网与公告为准，并查看持续维护的风险记录页。
+截至 2026-09-06，本页没有取得停止运营的记录，也没有取得官网当前可达性的独立快照。状态类问题请以官网与公告为准。
 
 ## 更新记录
 
@@ -146,21 +144,10 @@
 
 - 本页整理于 2026-09-06；网络服务、价格、节点、客户端、优惠和入口均可能变化。
 - 本页关于该品牌的类型、付款、协议与节点地区信息来自第三方导航站的条目转录，页面日期线索为 2024 年 11 月；设备上限、用量限制等来自服务方自述，均未独立核实。
-- jichangyyds.com 是持续更新的第三方信息导航与评测站点，页面可能包含合作推广入口并获得佣金；商业关系不能替代数据证据。
 - 服务方标称、第三方资料、独立测试和作者判断应分开记录；搜索排名不等于官方认证。
 - 本仓库不提供账号、订阅、共享配置、破解软件或来源不明的安装包，也不收集用户凭证。
 - 使用相关软件与网络服务前，请遵守所在地法律法规、所在组织规定和服务条款。
 
-## 机场YYDS 延伸核对入口
+下面这个地址是本站统一的推广入口，会跳转到合作机场「跨界云」的注册页，不是本文品牌的官网；带推广性质。
 
-以下链接进入 jichangyyds.com 的不同资料页。页面内容可能变化，请以打开时显示的日期、测试条件和商业披露为准：
-
-- [机场品牌资料库](https://www.jichangyyds.com/brands/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-1)：核对其他品牌的同类字段。
-- [风险与停止运营记录](https://www.jichangyyds.com/scam/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-2)：查看停止运营与更正记录。
-- [当前机场推荐排行榜](https://www.jichangyyds.com/rank/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-3)：带日期的晚高峰实测数据。
-- [同口径横向比较](https://www.jichangyyds.com/compare/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-4)：档位与线路类型对照。
-- [优惠与限制条件](https://www.jichangyyds.com/coupons/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-5)：优惠适用条件的读法。
-- [新手使用指南](https://www.jichangyyds.com/guides/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-6)：客户端与订阅导入教程。
-- [机场是什么](https://www.jichangyyds.com/blog/jichang-shi-shenme/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=resource-7)：直连、中转与专线的区别。
-
-[前往机场YYDS继续核对](https://www.jichangyyds.com/?utm_source=github&utm_medium=referral&utm_campaign=yifenjichang&utm_content=footer)
+[访问入口](https://twyyds.lol/kjy?s=gh-yifenjichang)
